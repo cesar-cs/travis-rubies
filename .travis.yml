@@ -113,6 +113,34 @@ jobs:
     language: bash
     group: edge
     name: xenial-ppc64le
+  - arch: arch64
+    dist: xenial
+    name: xenial-arch64
+    addons:
+      apt:
+        packages:
+        - ruby
+  - arch: arch64
+    dist: bionic
+    name: bionic-arch64
+    addons:
+      apt:
+        packages:
+        - ruby
+  - arch: s390x
+    dist: xenial
+    name: xenial-s390x
+    addons:
+      apt:
+        packages:
+        - ruby
+  - arch: s390x
+    dist: bionic
+    name: bionic-s390x
+    addons:
+      apt:
+        packages:
+        - ruby
 
 before_cache:
   - echo rvm_auto_reload_flag=1 >> ~/.rvmrc
