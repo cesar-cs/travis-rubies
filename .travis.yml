@@ -113,16 +113,16 @@ jobs:
     language: bash
     group: edge
     name: xenial-ppc64le
-  - arch: arch64
+  - arch: arm64
     dist: xenial
-    name: xenial-arch64
+    name: xenial-arm64
     addons:
       apt:
         packages:
         - ruby
-  - arch: arch64
+  - arch: arm64
     dist: bionic
-    name: bionic-arch64
+    name: bionic-arm64
     addons:
       apt:
         packages:
